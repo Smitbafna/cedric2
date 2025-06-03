@@ -47,7 +47,7 @@ const ZKMatch = () => {
     { id: 3, sender: 'match', text: 'Indeed! I\'m particularly interested in the shared markers on chromosome 7. Have you noticed any patterns?', timestamp: new Date(Date.now() - 20000) }
   ];
 
-  const handleLogin = (_provider) => {
+  const handleLogin = (_provider: any) => {
     setIsLoggedIn(true);
     setWalletAddress('0x' + Math.random().toString(16).substr(2, 8));
     setCurrentStep(1);
