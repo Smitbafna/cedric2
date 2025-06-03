@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useRef } from 'react';
-import { Upload, Shield, Users, MessageCircle, BarChart3, Lock, Eye, EyeOff, Check, AlertCircle, Dna, Zap, FileText, Settings, Send, X, User } from 'lucide-react';
+import { Upload, Shield, Users, MessageCircle, BarChart3, Lock, Eye, EyeOff, Check, AlertCircle, Dna, Zap, Send, X, User } from 'lucide-react';
 
 const ZKMatch = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -47,7 +47,7 @@ const ZKMatch = () => {
     { id: 3, sender: 'match', text: 'Indeed! I\'m particularly interested in the shared markers on chromosome 7. Have you noticed any patterns?', timestamp: new Date(Date.now() - 20000) }
   ];
 
-  const handleLogin = (provider) => {
+  const handleLogin = (_provider) => {
     setIsLoggedIn(true);
     setWalletAddress('0x' + Math.random().toString(16).substr(2, 8));
     setCurrentStep(1);
